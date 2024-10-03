@@ -1,0 +1,27 @@
+{
+  "name": "marko-tags-bug",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">= 20.x"
+  },
+  "dependencies": {
+    "@marko/tags-api-preview": "^0.7.7",
+    "marko": "^5.35.19"
+  },
+  "devDependencies": {
+    "@marko/run": "^0.4.8",
+    "@marko/run-adapter-node": "^0.1.13",
+    "@marko/runtime-tags": "^0.1.13",
+    "@marko/vite": "^4.1.19",
+    "vite": "^5.4.8"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production marko-run build",
+    "dev": "marko-run dev",
+    "preview": "marko-run preview",
+    "start": "NODE_ENV=production node dist/index.mjs"
+  },
+  "type": "module"
+}

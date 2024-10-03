@@ -1,0 +1,29 @@
+<!-- use tags -->
+<let/expanded=false/>
+
+<div class="flyout">
+  <button onClick() { expanded = !expanded; } type="button" >
+    open flyout
+  </button>
+  <div class=["flyout__dropdown", expanded && "flyout__dropdown--open"] >
+    <${input.renderBody}/>
+  </div>
+</div>
+
+<style>
+  .flyout {
+    display: inline-block;
+    position: relative;
+  }
+
+  .flyout__dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+
+  .flyout__dropdown--open {
+    display: block;
+  }
+</style>
